@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 <p align="center">
-  <img src="https:///home/yuge/projects/yugeten.github.io/images/profile2.png?raw=true" alt="Photo" style="width: 450px;"/> 
+  <img src="https://yugeten.github.io/images/profile2.png?raw=true" alt="Photo" style="width: 450px;"/> 
 </p>
 
 * 

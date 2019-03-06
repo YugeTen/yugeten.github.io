@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Yuge Shi"
 title_separator          : "-"
 name                     : &name "Yuge Shi"
-description              : &description ' "_Nearly everthing is very interesting if you go into it deep enough._" --Richard Feynman '
+description              : &description 'PhD student at University of Oxford'
 url                      : https://yugeten.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
