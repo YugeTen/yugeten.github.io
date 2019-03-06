@@ -3,11 +3,11 @@ title: "Action Anticipation with RBF Kernelized
 Feature Mapping RNN"
 collection: publications
 permalink: /publication/2018-09-01-action-anticipation-RBF
-venue: 'ECCV 2018'
-excerpt: 'This paper is about testing.'
+venue: 'ECCV'
+excerpt: 'In this paper, we introduce a novel Recurrent Neural Network-based algorithm for future video feature generation and action anticipation called feature mapping RNN.'
 date: 2018-09-01
-paperurl: http://openaccess.thecvf.com/content_ECCV_2018/papers/Yuge_Shi_Action_Anticipation_with_ECCV_2018_paper.pdf
 citation: 'Shi, Yuge, Basura Fernando, and Richard Hartley. &quot;Action Anticipation with RBF Kernelized Feature Mapping RNN.&quot; <i>Proceedings of the European Conference on Computer Vision (ECCV)</i>. 2018.'
+[Download Paper Here](http://yugeten.github.io/files/eccv18action.pdf)
 ---
 
 ## Abstract
