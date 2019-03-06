@@ -8,4 +8,8 @@ redirect_from:
   - /about.html
 ---
 
-sthsthsth
+<p align="center">
+  <img src="https:///home/yuge/projects/yugeten.github.io/images/profile2.png?raw=true" alt="Photo" style="width: 450px;"/> 
+</p>
+
+* 
