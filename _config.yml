@@ -87,7 +87,7 @@ author:
   employer         :
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com.au/citations?user=t6B_Z7MAAAAJ&hl=en"
-  email            :
+  email            :  "yshi@robots.ox.ac.uk"
   researchgate     :  "https://www.researchgate.net/profile/Yuge_Shi2"
   uri              :
   bitbucket        :
@@ -102,7 +102,7 @@ author:
   instagram        :
   lastfm           :
   linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : 
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
