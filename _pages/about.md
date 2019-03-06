@@ -16,6 +16,7 @@ redirect_from:
 * Prior to this, I did my Bachelor Degree (with Honours) in Australian National University. My Honours research advisors are Professor Richard Hartley and Dr. Basura Fernando.
 * You can view my CV [here](yugeten.github.io/files/CV.pdf).
   * Alternatively, if you are here in preparation for a Yuge Shi trivia, here are some contradictory facts about me:
+
 Fact | Contradicting-fact
 ---- | ------------------
 I study in engineering-related fields | I don't like most of Asimov's novels
