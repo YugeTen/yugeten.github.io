@@ -8,11 +8,12 @@ redirect_from:
 ---
 
 {% include base_path %}
-Download .pdf version of my CV from [here](http://yugeten.github.io/files/CV_06March2019.pdf)
+Download PDF version of my CV from [here](http://yugeten.github.io/files/CV_06March2019.pdf).
+
 Education
 ======
-* DPhil in Engineering Science, University of Oxford, current
-* Bachelor of Engineering (Honours), Australian National University, 2014
+* DPhil in Engineering Science, University of Oxford (current)
+* Bachelor of Engineering (Honours), Australian National University (2014)
 
 Work experience
 ======
@@ -47,5 +48,5 @@ Teaching
   
 Service and leadership
 ======
--->
 * Currently signed in to 43 different slack teams
+-->
