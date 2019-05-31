@@ -1,0 +1,242 @@
+@charset "UTF-8";
+
+#demopanel {
+  width: 100%;
+  margin-bottom: 50px;
+  overflow: hidden;
+  position: relative;
+}
+
+#chatbox {
+  border: solid;
+  border-color: #BCBCBC;
+  display: inline-block;
+  vertical-align: top;
+  width: 35%;
+  height:426px;
+  position: relative;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 4px;
+  margin-width: 2px;
+  max-width: 380px;
+}
+
+#messagebox {
+  overflow: hidden;
+  overflow-y: auto;
+  height:90%;
+  max-height: 90%;
+  display: flex;
+  flex-direction: column;
+  padding-right: 5px;
+}
+
+#messagebox tr:nth-child(2n) td:nth-child(2n) {
+  text-align: right;
+  line-height: 150%;
+  width: 65%;
+  word-break: break-word;
+}
+
+#fixscroll {
+  height: 1px;
+}
+
+#messagebox tr:nth-child(1) td:nth-child(1) span img {
+  width: 70px;
+  float: left;
+  position: relative;
+  left: -5px;
+}
+
+#messagebox tr:nth-child(2n) td:nth-child(2n) span {
+  padding: 5px;
+  padding-bottom: 2px;
+	font-family: comfortaa;
+  background-color: #00A6A5;
+  border-radius: 5px;
+  opacity: 0.8;
+  font-size: 14px;
+  display: inline-block;
+}
+
+#messagebox tr:nth-child(2n+1) td:nth-child(2n+1) {
+  text-align: left;
+  line-height: 150%;
+  width: 35%;
+  word-break: break-word;
+}
+
+#messagebox tr:nth-child(2n+1) td:nth-child(2n+1) span {
+  padding: 5px;
+  padding-bottom: 2px;
+	font-family: comfortaa;
+  background-color: #D0D9D5;
+  border-radius: 5px;
+  opacity: 0.8;
+  font-size: 15px;
+  display: inline-block;
+}
+
+#messagebox tr:nth-child(n+2) td:nth-child(2n+1) span {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: rgba(208, 217, 213, 0.5);
+  }
+  50% {
+  	background-color: rgba(233, 130, 107, 0.5);
+  }
+  100% {
+    background-color: rgba(208, 217, 213, 0.5);
+  }
+}
+
+#messagebox tr:nth-child(2n+1):hover td:nth-child(2n+1):hover #answer_dropdown, #messagebox tr:nth-child(2n+1):focus td:nth-child(2n+1):focus #answer_dropdown {
+  display: grid;
+  position: initial;
+}
+
+#messagebox #answer_dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 30px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 8px 10px;
+    z-index: 1;
+}
+
+#messagebox #answer_dropdown span {
+  background-color: #E9826B;
+  animation: unset;
+  margin: 1px;
+}
+
+#chatboxheader {
+  margin: 6px;
+  outline: solid;
+  outline-color: #008080;
+}
+
+#caption {
+  text-align: center;
+	font-family: comfortaa;
+	font-weight: 400;
+	color: #BCBCBC;
+}
+
+#img_gallery {
+  position:absolute;
+  top:0;
+  left:-600px;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  background-color: #008080;
+}
+
+#gallery_hidden {
+  width: 600px;
+  height: 432px;
+  float: left;
+  overflow: scroll;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#gallery_shown {
+  height: 432px;
+  width: 20px;
+  float: left;
+}
+
+#img_gallery:hover, #img_gallery:focus {
+  left: 0px;
+  background: rgb(0,128,128);
+  background: rgba(0,128,128,0.7);
+}
+
+#gallery_hidden .imgthumb {
+  width: 100px;
+  height: 100px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+#gallery_hidden form {
+  display: inline;
+}
+
+#gallery_hidden input[type='file'] {
+  opacity: 0;
+  margin: 0px;
+  height: 0px;
+  width: 0px;
+}
+
+#imgchatwrapper {
+  width: 85%;
+  margin: 0 auto;
+}
+
+#imgcap {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 35%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#loadedimg {
+  max-height: 360px;
+  object-fit: contain;
+}
+
+#titlebox {
+  line-height: 100%;
+}
+
+#questionbox #questiontext {
+  font-size: 14px;
+  color: #333333;
+  width: 81%;
+  height: 25px;
+  font-family: comfortaa;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  border-radius: 5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-left: 10px;
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  background-color: rgba(0,128,128,0.1);
+}
+
+#questionbox #resetbutton {
+  font-size: 14px;
+	color: #FFFFFF;
+  background-color: #008080;
+  width: 7%;
+  height: auto;
+	font-family: comfortaa;
+	font-style: normal;
+	font-weight: 400;
+	font-variant: normal;
+  border-radius: 5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding: 2px;
+  position: absolute;
+  bottom: 8.5px;
+  right: 8px;
+}
+

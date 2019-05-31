@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>daniela massiceti // flipdial</title>
+
+<link href="{{url_for('.static', filename='flipdial.css')}}" rel="stylesheet" type="text/css" media="screen"/>
+<link href="{{url_for('static', filename='main.css')}}" rel="stylesheet" type="text/css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='twitter-bootstrap.css')}}" />
+<link rel="shortcut icon" href="{{ url_for('static', filename='tabby.ico')}}" >
+<link rel="icon" href="{{ url_for('static', filename='tabby.ico')}}">
+
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Comfortaa" />
+
+<meta name="keywords" content="daniela massiceti, university of oxford, phd student, phil torr, torr vision group, computer vision, oxford">
+<meta name="description" content="daniela massiceti // computer vision PhD student" />
+<meta name="p:domain_verify" content="15f149f4e12ce0bf04ad541a6e0d8a62"/>
+<meta property="og:image" content="{{ url_for('static', filename='robotgirl_onecolor.png') }}" />
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49520497-2', 'auto');
+  ga('send', 'pageview');
+</script>
+
+{% if scroll[0] %}
+<script> document.location.hash = '#' + '{{ scroll[0] }}'; </script>
+{% endif %}
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+  var heightdiff = $("#messagetable").height() - $("#messagebox").height();
+  document.getElementById("msgboxheight").value = heightdiff;
+  var boxheight = $("#messagebox").height();
+  var tabheight = $("#messagetable").height();
+  //if (tabheight > boxheight) { document.getElementById("messagebox").style.flexDirection = "column-reverse";}
+  //$("#messagebox").scrollTop(tabheight);
+  //$("#messagebox").animate({scrollTop : tabheight }, 100);
+  //document.getElementsByTagName("html")[0].style.visibility = "visible";
+});
+</script>
+
+</head>
+
+<body>
+<div id="wrapper">
+	<header id="top">
+    <a href="http://za.linkedin.com/pub/daniela-massiceti/66/422/425" target=_blank><img id="linkedin" src="{{ url_for('static', filename='socialmediaicons/linkedin.png')}}" width="30" height="30" title="linkedin" alt="linkedin"/></a>
+    <a href="mailto:daniela@robots.ox.ac.uk" target="_top"><img id="mail" src="{{ url_for('static', filename='socialmediaicons/mail_newcolour.png')}}" width="30" height="30" title="mail: daniela@robots.ox.ac.uk" alt="mail"/></a>
+    <a href="https://www.twitter.com/DanniMassi/" target=_blank><img id="twitter" src="{{ url_for('static', filename='socialmediaicons/twitter.png')}}" width="30" height="30" title="twitter: @dannimassi" alt="twitter"/></a>
+  </header>
+   
+  <div id="headerimg">
+    <a href="{{ url_for('home') }}">
+      <div class = "h">Daniela Massiceti</div>
+    </a>
+	<div class ="subh">D.Phil Student in Computer Vision, University of Oxford </div>
+  </div>
+ 	<hr id="tophr"> 
+	    <nav class="navigationbar">
+    		<ul>
+          <li><a class="normal" href="{{ url_for('home') }}" id=" ">home</a></li>
+          <li><a class="normal" href="{{ url_for('about') }}" id=" ">about</a></li>
+          <li><a class="normal" href="{{ url_for('research') }}" id=" ">research</a> <a class="normal" href=" {{ url_for('.home') }}" id="currentPage">&middot flip-dial</a></li>
+          <li><a href="{{ url_for('static', filename='')}}{{ cv }}" target=_blank id=" ">cv</a></li>
+    		</ul>
+      </nav>
+  <hr id="demo">
+  <div id="mainbody">
+    <div id="titlebox">
+      <h1>FlipDial: A Generative Model for Two-Way Visual Dialogue</h1>
+      <h2>Daniela Massiceti, N. Siddharth, Puneet K. Dokania, Philip H.S. Torr</h2><br>
+    </div>
+
+    <div id="demopanel">
+      <div id="img_gallery">
+        <div id="gallery_hidden">
+
+          <form method="post" enctype="multipart/form-data" >
+            <label for="img-input">
+            <img src="{{url_for('.static', filename='icons/upload-image.jpg')}}" style="cursor:pointer"/>
+            </label>
+            <input class="imgthumb" id="img-input" type="file" name="upload_img" accept="image/*" onchange="this.form.submit()" value="upload_img"/>
+          </form>
+          {% for imgname in imgs %}
+            <form method="post"><input class="imgthumb" type="image" value="{{ imgname }}" name="img_to_load" src="{{url_for('.static', filename='thumbnails/')}}{{ imgname }}"
+            style="cursor:pointer"></form>
+          {% endfor %}
+        </div>
+        <div id="gallery_shown">
+          &raquo;
+        </div>
+      </div>
+   
+      <div id="imgchatwrapper">
+        <div id="imgcap"> 
+          <img id="loadedimg" src="{{img_to_load[0]}}" width=100%/> 
+          <div id="caption">{{img_to_load[1]}}</div>
+        </div>
+    
+        <div id="chatbox">
+	  <div id="messagebox" style="flex-direction: {{scroll[1]}}">
+            <table id="messagetable" width=100%>
+              <tr>
+                <td><span><img src="{{ url_for('static', filename='tabby.ico') }}"></img>Hello! I'm a visual chat-bot. Pick an image and quiz me!</span></td>
+                <td></td>
+              </tr>
+            {% for q,a in chat %} 
+              <tr>
+                <td></td>
+                <td><span>{{ q }}</span></td>
+              </tr>
+              <tr>
+                <td>
+                  <span>{{ a[0] }}</span>
+                    <div id="answer_dropdown">
+                      <span>{{ a[1] }}</span>
+                      <span>{{ a[2] }}</span>
+                      <span>{{ a[3] }}</span>
+                      <span>{{ a[4] }}</span>
+                      <span>{{ a[5] }}</span>
+                      <span>{{ a[6] }}</span>
+                      <span>{{ a[7] }}</span>
+                    </div>
+                </td>
+                <td></td>
+              </tr>
+            {% endfor %}
+            </table>
+          </div>
+        
+          <div id="questionbox">
+            <form method="post" enctype="multipart/form-data" >
+              <input id="questiontext" type="text" name="question" {{autofocus}} onClick="this.setSelectionRange(0, this.value.length)" value="{{questiontext}}"/>
+	      <input type="hidden" name="msgboxheight" id="msgboxheight" value="0"/>
+            </form>
+            <form method="post">
+              <input id="resetbutton" type="image" name="reset" value="submitted" src="{{ url_for('.static', filename='icons/reset-undo.png')}}"</input>
+            </form>
+          </div>
+        </div>
+      </div>
+    
+    </div> 
+
+
+	  <hr id="tophr2">
+    <nav class="navigationbar">
+      <ul>
+        <li><a class="normal" href=" {{ url_for('.home') }}" id=" ">abstract</a></li>
+        <li><a class="normal" href=" {{ url_for('.onevd_demo') }}" id="currentPage">1vd demo</a></li>
+        <li><a class="normal" href=" {{ url_for('.paper') }}" id=" ">paper</a></li>
+        <li>code (coming)</li>
+      </ul>
+    </nav>
+    <hr id="bottomhr2">
+
+  	<div id="footerwrapper">
+		  <div id="email"> daniela_at_robots.ox.ac.uk </div>
+      <img src="{{ url_for('static', filename='robotgirl.png') }}" alt=""/>
+	  </div>
+  </div>
+</div>
+</body>
+</html>
