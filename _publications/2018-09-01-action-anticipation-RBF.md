@@ -6,6 +6,7 @@ permalink: /publication/2018-09-01-action-anticipation-RBF
 venue: 'ECCV'
 excerpt: 'In this paper, we introduce a novel Recurrent Neural Network-based algorithm for future video feature generation and action anticipation called feature mapping RNN.'
 date: 2018-09-01
+---
 [View Paper Here.](http://yugeten.github.io/files/eccv18action.pdf)
 
 ## Abstract
@@ -15,4 +16,3 @@ Our novel RNN architecture builds upon three effective principles of machine lea
 perceptron facilitated with an RBF kernel layer, we are able to accurately predict the action in the video.
 
 In our experiments, we obtain 18% improvement on _JHMDB-21_ dataset, 6% on _UCF101-24_ and 13% improvement on _UT-Interaction_ datasets over prior state-of-the-art for action anticipation.
----

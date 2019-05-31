@@ -1,13 +1,11 @@
 ---
-title: "Action Anticipation with RBF Kernelized
-Feature Mapping RNN"
+title: "Variational Mixture-of-Experts Autoencoders for Multi-Modal Deep Generative Models"
 collection: publications
-permalink: /publication/2019-06-01-variational-inference-multimodal.md
+permalink: /publication/2019-06-01-multimodal-VAE.md
 venue: 'ECCV'
 excerpt: 'In this paper, we introduce a novel Recurrent Neural Network-based algorithm for future video feature generation and action anticipation called feature mapping RNN.'
-date: 2018-09-01
+date: 2019-06-01
 ---
-citation: 'Shi, Yuge, Basura Fernando, and Richard Hartley. &quot;Action Anticipation with RBF Kernelized Feature Mapping RNN.&quot; <i>Proceedings of the European Conference on Computer Vision (ECCV)</i>. 2018.'
 [View Paper Here.](http://yugeten.github.io/files/eccv18action.pdf)
 
 ## Abstract
