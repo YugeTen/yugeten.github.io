@@ -1,7 +1,7 @@
 ---
 title: "Variational Mixture-of-Experts Autoencoders for Multi-Modal Deep Generative Models"
 collection: publications
-permalink: /publication/2019-06-01-multimodal-VAE.md
+permalink: /publication/2019-06-01-multimodal-VAE
 venue: 'ECCV'
 excerpt: 'In this paper, we introduce a novel Recurrent Neural Network-based algorithm for future video feature generation and action anticipation called feature mapping RNN.'
 date: 2019-06-01
