@@ -8,6 +8,8 @@ redirect_from:
 ---
 
 {% include base_path %}
+PDF
+=====
 Download PDF version of my CV from [here](http://yugeten.github.io/files/CV_06March2019.pdf).
 
 Education
