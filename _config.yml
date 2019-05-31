@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Yuge Shi"
 title_separator          : "-"
 name                     : &name "Yuge Shi"
-description              : &description 'Machine learning PhD student at University of Oxford'
+description              : &description 'Machine learning PhD student at University of Oxford.'
 url                      : https://yugeten.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
@@ -87,7 +87,7 @@ author:
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com.au/citations?user=t6B_Z7MAAAAJ&hl=en"
-  email            :  "yshi@robots.ox.ac.uk"
+  email            : yshi@robots.ox.ac.uk
   researchgate     :  
   uri              :
   bitbucket        :
