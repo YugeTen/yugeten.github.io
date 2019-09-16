@@ -5,6 +5,9 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
+# Google Analytics
+google_analytics: UA-148057150-1
+
 # Site Settings
 locale                   : "en-US"
 title                    : "Yuge Shi"
@@ -108,7 +111,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : 
+  twitter          : "https://twitter.com/YugeTen" 
   vine             :
   weibo            :
   xing             :
