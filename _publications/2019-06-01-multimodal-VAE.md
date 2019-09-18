@@ -2,17 +2,19 @@
 title: "Variational Mixture-of-Experts Autoencoders for Multi-Modal Deep Generative Models"
 collection: publications
 permalink: /publication/2019-06-01-multimodal-VAE
-venue: 'ECCV'
-excerpt: 'In this paper, we introduce a novel Recurrent Neural Network-based algorithm for future video feature generation and action anticipation called feature mapping RNN.'
+venue: 'Neurips 2019'
+excerpt: 'We propose a mixture-of-experts multimodal variational autoencoder (MMVAE) for learning of generative models on modality pairs, including image-image and language-vision dataset.'
 date: 2019-06-01
 ---
-[View Paper Here.](http://yugeten.github.io/files/eccv18action.pdf)
+Coming to Arxiv soon!
 
 ## Abstract
-We introduce a novel Recurrent Neural Network-based algorithm for
-future video feature generation and action anticipation called _**feature mapping RNN**_.
-Our novel RNN architecture builds upon three effective principles of machine learning, namely parameter sharing, Radial Basis Function kernels and adversarial training. Using only some of the earliest frames of a video, the feature mapping RNN is able to generate future features with a fraction of the parameters needed in traditional RNN. By feeding these future features into a simple multilayer
-perceptron facilitated with an RBF kernel layer, we are able to accurately predict the action in the video.
+Learning generative models that span multiple data modalities, such as vision and language, is often motivated by the desire to learn more useful, generalisable representations that faithfully capture common underlying factors between the modalities. In this work, we characterise successful learning of such models as the fulfilment of four criteria:
 
-In our experiments, we obtain 18% improvement on _JHMDB-21_ dataset, 6% on _UCF101-24_ and 13% improvement on _UT-Interaction_ datasets over prior state-of-the-art for action anticipation.
+1. implicit latent decomposition into shared and private subspaces,
+2. coherent joint generation over all modalities,
+3. coherent cross-generation across individual modalities, and
+4. improved model learning for individual modalities through multi-modal integration.
+
+Here, we propose a mixture-of-experts multimodal variational autoencoder (MMVAE) for learning of generative models on different sets of modalities, including a challenging image-language dataset, and demonstrate its ability to satisfy all four criteria, both qualitatively and quantitatively.
 

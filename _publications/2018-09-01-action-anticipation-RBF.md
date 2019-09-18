@@ -3,7 +3,7 @@ title: "Action Anticipation with RBF Kernelized
 Feature Mapping RNN"
 collection: publications
 permalink: /publication/2018-09-01-action-anticipation-RBF
-venue: 'ECCV'
+venue: 'ECCV2018'
 excerpt: 'In this paper, we introduce a novel Recurrent Neural Network-based algorithm for future video feature generation and action anticipation called feature mapping RNN.'
 date: 2018-09-01
 ---
