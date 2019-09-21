@@ -2,7 +2,7 @@
 title: "Variational Mixture-of-Experts Autoencoders for Multi-Modal Deep Generative Models"
 collection: publications
 permalink: /publication/2019-06-01-multimodal-VAE
-venue: 'Neurips 2019'
+venue: 'Neurips'
 excerpt: 'We propose a mixture-of-experts multimodal variational autoencoder (MMVAE) for learning of generative models on modality pairs, including image-image and language-vision dataset.'
 date: 2019-06-01
 ---
