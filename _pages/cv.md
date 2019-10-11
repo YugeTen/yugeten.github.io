@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 {% include base_path %}
-Download PDF version of my CV from [here](http://yugeten.github.io/files/CV_06March2019.pdf).
+Download PDF version of my CV from [here](http://yugeten.github.io/files/CV_11Oct2019.pdf).
 
 Education
 ======
@@ -17,6 +17,8 @@ Education
 
 Work experience
 ======
+* 2019: Sponsorship officer, Oxford Women in Computer Science Society, UK
+  * I am currently the sponsorship officer in [OxWoCS](http://www.cs.ox.ac.uk/societies/women/). I am in charge of communications and interactions with companies that sponsor/looking to sponsor the society and help organise industry events.
 * 2018: Vacational Student Scholar, Data61, Australia
   * This is a 3-month internship I did in [Data61](https://www.data61.csiro.au/). I was tasked to address the credibility issues of a machine learning based model designed in Data61 to assess the condition of waterpipes in Sydney, Australia. 
 
