@@ -6,7 +6,9 @@ venue: 'Neurips'
 excerpt: 'We propose a mixture-of-experts multimodal variational autoencoder (MMVAE) for learning of generative models on modality pairs, including image-image and language-vision dataset.'
 date: 2019-06-01
 ---
-Coming to Arxiv soon!
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=ZWYZN9f8SgI&fbclid=IwAR1IO4b90XsOLpDWWKAyBny7q1eaLZRUNNA9ic_qyNGpRUnyFOkLIQbt7lo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+See [paper](https://arxiv.org/abs/1911.03393) and [code](https://github.com/iffsid/mmvae).
 
 ## Abstract
 Learning generative models that span multiple data modalities, such as vision and language, is often motivated by the desire to learn more useful, generalisable representations that faithfully capture common underlying factors between the modalities. In this work, we characterise successful learning of such models as the fulfilment of four criteria:
