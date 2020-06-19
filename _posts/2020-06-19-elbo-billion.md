@@ -53,8 +53,8 @@ If you have this memorised or tattooed on your arm, we are ready to go!
 ## 1. A more intuitive (visualisable) guide to ELBO
 > Paper discussed: [ELBO surgery: yet another way to carve up the variational evidence lower bound](http://approximateinference.org/accepted/HoffmanJohnson2016.pdf), work by Matthew Hoffman and Matthew Johnson.
 
-This work provides a very intuitive perspective of the VAE objective by decomposing and rewriting ELBO. For a batch of N observations \\(X=x_n\\) and their corresponding latent codes \\(Z=\{z_n\}_{n=1}^N\\), ELBO can be rewritten as:
-This work provides a very intuitive perspective of the VAE objective by decomposing and rewriting ELBO. For a batch of N observations \\(X=\{x_n\}_{n=1}^N\\) and their corresponding latent codes \\(Z=\{z_n\}_{n=1}^N\\), ELBO can be rewritten as:
+
+This work provides a very intuitive perspective of the VAE objective by decomposing and rewriting ELBO. For a batch of N observations \\(X=\left{x_n\right}_{n=1}^N\\) and their corresponding latent codes \\(Z=\left{z_n\right}_{n=1}^N\\), ELBO can be rewritten as:
 
 \begin{align}
 \mathcal{L}(\theta, \phi) &= \underbrace{\left[ \frac{1}{N} \sum^N_{n=1} \mathbb{E}_{q(z_n|x_n)} [\log p(x_n | z_n)] \right]}_{\color{#4059AD}{\text{(1) Average reconstruction}}} - \underbrace{(\log N - \mathbb{E}_{q(z)}[\mathbb{H}[q(x_n|z)]])}_{\color{#EE6C4D}{\text{(2) Index-code mutual info}}} + \underbrace{\text{KL}(q(z)||p(z))}_{\color{#86CD82}{\text{(3) KL between q and p}}}
