@@ -1,2 +1,4 @@
+node_modules/
 _site/
+package_lock.json
 .idea/
