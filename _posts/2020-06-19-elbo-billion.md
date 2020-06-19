@@ -1,4 +1,3 @@
-
 ---
 title: 'How I learned to stop worrying and write ELBO (and its gradients) in a billion ways' 
 date: 2020-06-19
