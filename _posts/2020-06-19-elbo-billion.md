@@ -49,6 +49,7 @@ If you have this memorised or tattooed on your arm, we are ready to go!
 ## 1. A more intuitive (visualisable) guide to ELBO
 > Paper discussed: [ELBO surgery: yet another way to carve up the variational evidence lower bound](http://approximateinference.org/accepted/HoffmanJohnson2016.pdf), work by Matthew Hoffman and Matthew Johnson.
 
+This work provides a very intuitive perspective of the VAE objective by decomposing and rewriting ELBO. For a batch of N observations \\(X=x_n\\) and their corresponding latent codes \\(Z=\{z_n\}_{n=1}^N\\), ELBO can be rewritten as:
 This work provides a very intuitive perspective of the VAE objective by decomposing and rewriting ELBO. For a batch of N observations \\(X=\{x_n\}_{n=1}^N\\) and their corresponding latent codes \\(Z=\{z_n\}_{n=1}^N\\), ELBO can be rewritten as:
 
 \begin{align}
