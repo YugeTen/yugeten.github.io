@@ -39,7 +39,7 @@ Before we dive in, let's look at the most basic form of ELBO first, here it is i
 
 <div>
 \begin{align*}
-\mathcal{L}(\theta, \phi) = \mathbb{E}_{z\sim q(z\mid x)} \displaystyle \left[\log \frac{p(x,z)}{q(z\mid x)} \right] > \log p(x),\notag
+\mathcal{L}(\theta, \phi) = \mathbb{E}_{z\sim q(z\mid x)} \displaystyle \left[\log \frac{p(x,z)}{q(z\mid x)} \right] < \log p(x),\notag
 \end{align*}
 </div>
 
