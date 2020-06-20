@@ -12,6 +12,7 @@ tags:
   - Monte Carlo gradient estimation
 ---
 
+> Latex equation not rendering? Try using a different browser or this link [here](https://hackmd.io/@5pwCvlLhSMm2E1skjPTOTQ/elbo)
 
 <script src="mj.config" type="text/javascript"></script>
 
