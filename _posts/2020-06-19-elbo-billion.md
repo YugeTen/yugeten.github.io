@@ -343,3 +343,4 @@ This is actually very easy to implement: cheeky little plug, we used this object
 # We are done! 
 A heartfelt congratulation if you got all the way here, well done! Leave a comment if you have any question, if you find this helpful please share on twitter/facebook :)
 
+Special thanks to my supervisor Dr. Siddharth Narayanaswamy for guiding me through these literature with great insights and extreme patience.
