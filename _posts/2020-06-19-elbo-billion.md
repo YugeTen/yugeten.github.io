@@ -13,10 +13,6 @@ tags:
 ---
 
 
-<iframe width="100%" height="500" src="https://hackmd.io/@5pwCvlLhSMm2E1skjPTOTQ/elbo" frameborder="0"></iframe>
-
-
-
 
 
 ## Overview
@@ -54,13 +50,13 @@ If you have this memorised or tattooed on your arm, we are ready to go!
 > Paper discussed: [ELBO surgery: yet another way to carve up the variational evidence lower bound](http://approximateinference.org/accepted/HoffmanJohnson2016.pdf), work by Matthew Hoffman and Matthew Johnson.
 
 
-This work provides a very intuitive perspective of the VAE objective by decomposing and rewriting ELBO. For a batch of N observations \\(X=\left{x_n\right}_{n=1}^N\\) and their corresponding latent codes \\(Z=\left{z_n\right}_{n=1}^N\\), ELBO can be rewritten as:
+This work provides a very intuitive perspective of the VAE objective by decomposing and rewriting ELBO. For a batch of N observations \\(X=\left{x_n\right}\_{n=1}^N\\) and their corresponding latent codes \\(Z=\left{z_n\right}_{n=1}^N\\), ELBO can be rewritten as:
 
 \begin{align}
-\mathcal{L}(\theta, \phi) &= \underbrace{\left[ \frac{1}{N} \sum^N_{n=1} \mathbb{E}_{q(z_n|x_n)} [\log p(x_n | z_n)] \right]}_{\color{#4059AD}{\text{(1) Average reconstruction}}} - \underbrace{(\log N - \mathbb{E}_{q(z)}[\mathbb{H}[q(x_n|z)]])}_{\color{#EE6C4D}{\text{(2) Index-code mutual info}}} + \underbrace{\text{KL}(q(z)||p(z))}_{\color{#86CD82}{\text{(3) KL between q and p}}}
+\mathcal{L}(\theta, \phi) &= \underbrace{\left[ \frac{1}{N} \sum^N_{n=1} \mathbb{E}\_{q(z_n|x_n)} [\log p(x_n | z_n)] \right]}\_{\color{#4059AD}{\text{(1) Average reconstruction}}} - \underbrace{(\log N - \mathbb{E}\_{q(z)}[\mathbb{H}[q(x_n|z)]])}_{\color{#EE6C4D}{\text{(2) Index-code mutual info}}} + \underbrace{\text{KL}(q(z)||p(z))}\_{\color{#86CD82}{\text{(3) KL between q and p}}}
 \end{align}
 
-Where \\(q(z)\\) is the marginal, i.e. \\(q(z)=\sum^{N}_{n=1}q(z,x_n)\\), and for large N can be approximated by the average aggregated posterior \\(q^{\text{avg}}(z)=\frac{1}{N}\sum^N_{n=1}q(z|x_n)\\).
+Where \\(q(z)\\) is the marginal, i.e. \\(q(z)=\sum^{N}\_{n=1}q(z,x_n)\\), and for large N can be approximated by the average aggregated posterior \\(q^{\text{avg}}(z)=\frac{1}{N}\sum^N\_{n=1}q(z|x_n)\\).
 
 So what is the point of all this? Well, what's interesting with this decomposition is that <span style="color:#4059AD">(1) average reconstruction </span> and <span style="color:#EE6C4D">(2) index-code mutual information</span> have opposing effects on the latent space: 
 - <span style="color:#4059AD">Term (1)</span> encourages accurate reconstruction of observations, which typically forces separated encoding for each \\(x_n\\);
