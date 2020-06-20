@@ -14,7 +14,31 @@ tags:
 
 > Latex equation not rendering? Try using a different browser or this link [here](https://hackmd.io/@5pwCvlLhSMm2E1skjPTOTQ/elbo)
 
-<script src="mj.config" type="text/javascript"></script>
+<!-- <script src="mj.config" type="text/javascript"></script> -->
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: [
+      "MathMenu.js",
+      "MathZoom.js",
+      "AssistiveMML.js",
+      "a11y/accessibility-menu.js"
+    ],
+    jax: ["input/TeX", "output/CommonHTML"],
+    TeX: {
+      extensions: [
+        "AMSmath.js",
+        "AMSsymbols.js",
+        "noErrors.js",
+        "noUndefined.js",
+      ]
+    }
+  });
+</script>
 
 ## Overview
 
