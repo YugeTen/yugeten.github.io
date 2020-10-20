@@ -42,7 +42,7 @@ Before we dive in, let's look at the most basic form of ELBO first, here it is i
 
 <div>
 \begin{align*}
-\mathcal{L}(\theta, \phi) = \mathbb{E}_{z\sim q(z\mid x)} \displaystyle \left[\log \frac{p(x,z)}{q(z\mid x)} \right] \leq \log p(x),\notag
+\mathcal{L}(\theta, \phi) = \mathbb{E}_{z\sim q_\phi(z\mid x)} \displaystyle \left[\log \frac{p_\theta(x,z)}{q_\phi(z\mid x)} \right] \leq \log p(x),\notag
 \end{align*}
 </div>
 
@@ -59,7 +59,7 @@ This work provides a very intuitive perspective of the VAE objective by decompos
 
 <div>
 \begin{align*}
-\mathcal{L}(\theta, \phi) &= \underbrace{\left[ \frac{1}{N} \sum^N_{n=1} \mathbb{E}\_{q(z_n\mid x_n)} [\log p(x_n \mid  z_n)] \right]}_{\color{#4059AD}{\text{(1) Average reconstruction}}} - \underbrace{(\log N - \mathbb{E}\_{q(z)}[\mathbb{H}[q(x_n\mid z)]])}_{\color{#EE6C4D}{\text{(2) Index-code mutual info}}} \notag \\
+\mathcal{L}(\theta, \phi) &= \underbrace{\left[ \frac{1}{N} \sum^N_{n=1} \mathbb{E}_{q(z_n\mid x_n)} [\log p(x_n \mid  z_n)] \right]}_{\color{#4059AD}{\text{(1) Average reconstruction}}} - \underbrace{(\log N - \mathbb{E}_{q(z)}[\mathbb{H}[q(x_n\mid z)]])}_{\color{#EE6C4D}{\text{(2) Index-code mutual info}}} \notag \\
  & + \underbrace{\text{KL}(q(z)\mid p(z))}_{\color{#86CD82}{\text{(3) KL between q and p}}} \notag \\
 \end{align*}
 </div>
@@ -203,7 +203,7 @@ This method is much less general-purpose compared to the score function estimato
 ## The lurking score function in reparametrisation trick
 At this point we should all be familiar with reparametrisation trick used in VAEs for gradient estimation, but here we need to formalise it a bit more for the derivation in this section:
 
-> Reparametrisation trick express sample \\(z\\) from parametric distribution \\(q_\phi(z)\\) as a deterministic function of a random variable \\(\hat{\epsilon}\\) with some fixed distribution and the parameters \\(\phi\\), i.e. \\(z=t(\hat{\epsilon}, \phi)\\). For example, if \\(q_\phi\\) is a diagonal Gaussian, then for \\() \epsilon \sim \mathcal{N}(0, \mathbb{I}),\ z=\mu+\sigma\hat{\epsilon}\\).
+> Reparametrisation trick express sample \\(z\\) from parametric distribution \\(q_\phi(z)\\) as a deterministic function of a random variable \\(\hat{\epsilon}\\) with some fixed distribution and the parameters \\(\phi\\), i.e. \\(z=t(\hat{\epsilon}, \phi)\\). For example, if \\(q_\phi\\) is a diagonal Gaussian, then for \\(\epsilon \sim \mathcal{N}(0, 1),\ z=\mu+\sigma\hat{\epsilon}\\).
 
 We already know that reparametrisation trick (<span style="color:#55828B">path derivative</span>) has the benefit of lower variance for gradient estimation compared to <span style="color:#87BBA2">score function</span>. The  kicker here is --- the  gradient of ELBO actually contains a <span style="color:#87BBA2">score function</span> term, causing the estimator to have large variance!
 
@@ -270,7 +270,7 @@ Ideally we want a large SNR for the gradient estimator fo both \\(\theta\\) and 
 \end{align*}
 </div>
 
-This tells us that while increasing the number of IWAE samples \\(K\\) get us a tighter lower bound, it actually worsen SNR\\(\phi)\\) --- meaning that **a large K hurts the performance of the gradient estimator for** \\(\phi\\)! Also note that the same effect is not observed for the generative model \\(\theta\\), but the damage on inference model learning cannot simply be mitigated by increasing \\(M\\).
+This tells us that while increasing the number of IWAE samples \\(K\\) get us a tighter lower bound, it actually worsen SNR (\\(\phi\\)) --- meaning that **a large K hurts the performance of the gradient estimator for** \\(\phi\\)! Also note that the same effect is not observed for the generative model \\(\theta\\), but the damage on inference model learning cannot simply be mitigated by increasing \\(M\\).
 
 The authors gave a very comprehensive proof to their finding, so I'm going to leave the mathy heavy lifting to the original paper :) We shall march on to the last section of this blog: an elegant solution to solve the large variance in ELBO gradient estimators --- DReG.
 
