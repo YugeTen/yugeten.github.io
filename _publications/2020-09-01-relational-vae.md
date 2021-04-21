@@ -2,9 +2,9 @@
 title: "Relating by Contrasting: A Data-efficient Framework for Multimodal Generative Models"
 collection: publications
 permalink: /publication/2020-09-01-relational-vae
-venue: 'ICLR2021'
+venue: 'ICLR'
 excerpt: 'We develop a novel contrastive framework for multimodal generative model learning, allowing us to train the model not just by the commonality between modalities, but by the distinction between ''related`` and ''unrelated`` multimodal data.'
-date: 2020-09-01
+date: 2021-01-01
 ---
 
 See [paper](https://arxiv.org/pdf/2007.01179.pdf).
