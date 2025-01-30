@@ -10,10 +10,10 @@ google_analytics: UA-148057150-1
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Yuge Shi"
+title                    : "Jimmy (Yuge) Shi"
 title_separator          : "-"
-name                     : &name "Yuge Shi"
-description              : &description "DPhil student, University of Oxford"
+name                     : &name "Jimmy (Yuge) Shi"
+description              : &description "Senior Research Scientist, Google DeepMind"
 url                      : https://yugeten.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
@@ -83,14 +83,14 @@ analytics:
 
 # Site Author
 author:
-  name             : "Yuge Shi"
+  name             : "Jimmy (Yuge) Shi"
   avatar           : "profile.png"
-  bio              : "DPhil student, University of Oxford"
-  location         : "Oxford, United Kingdom"
+  bio              : "Senior Research Scientist, Google DeepMind"
+  location         : "London, United Kingdom"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com.au/citations?user=t6B_Z7MAAAAJ&hl=en"
-  email            : "yshi@robots.ox.ac.uk"
+  email            : "jimmyshi820@gmail.com"
   researchgate     :  
   uri              :
   bitbucket        :
