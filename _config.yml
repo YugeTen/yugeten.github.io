@@ -10,9 +10,9 @@ google_analytics: UA-148057150-1
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Jimmy (Yuge) Shi"
+title                    : "Yuge (Jimmy) Shi"
 title_separator          : "-"
-name                     : &name "Jimmy (Yuge) Shi"
+name                     : &name "Yuge (Jimmy) Shi"
 description              : &description "Senior Research Scientist, Google DeepMind"
 url                      : https://yugeten.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -83,7 +83,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Jimmy (Yuge) Shi"
+  name             : "Yuge (Jimmy) Shi"
   avatar           : "profile.png"
   bio              : "Senior Research Scientist, Google DeepMind"
   location         : "London, United Kingdom"
@@ -311,3 +311,6 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+plugins:
+  - jemoji

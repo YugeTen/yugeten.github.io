@@ -39,3 +39,114 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+
+/* =====================
+   Base Typography
+   ===================== */
+body {
+  font-family: "Arial", sans-serif;
+  font-size: 18px; /* Main text size */
+  line-height: 1.6;
+  color: #444;
+}
+
+/* =====================
+   Headings
+   ===================== */
+
+h1 {
+  font-family: "Georgia", serif;
+  font-size: 32px; /* Ensure it's the largest */
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #bbb; /* Softer gray line */
+}
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #444;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #555;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+h6 {
+  font-size: 16px;
+  font-style: italic;
+}
+
+/* =====================
+   Blockquotes
+   ===================== */
+blockquote {
+  font-style: italic;
+  border-left: 4px solid #888; /* Neutral gray */
+  padding-left: 15px;
+  color: #555;
+  background: #f4f4f4; /* Light gray background */
+  padding: 10px 15px;
+  margin: 1.5em 0;
+  border-radius: 5px; /* Soft rounded edges */
+}
+
+/* =====================
+   Code Blocks
+   ===================== */
+pre {
+  background: #282c34; /* Dark theme */
+  color: #abb2bf; /* Syntax text color */
+  font-family: "Fira Code", monospace;
+  font-size: 16px;
+  padding: 15px;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+code {
+  font-family: "Fira Code", monospace;
+  background-color: #f4f4f4;
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #c7254e; /* Dark red for inline code */
+}
+
+pre code {
+  background: none;
+  padding: 0;
+  color: inherit;
+}
+
+
+
+
+
+/* =====================
+   Links
+   ===================== */
+a {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
