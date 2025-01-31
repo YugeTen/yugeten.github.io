@@ -13,5 +13,6 @@ redirect_from:
 </p>
 
 * Hello stranger! Welcome to my website :)
-* I am a machine learning PhD student in [Torr Vision Group](http://www.robots.ox.ac.uk/~tvg/) at University of Oxford. My supervisor is Professor Philip Torr. Prior to this, I acquired my Bachelor Degree in Engineering in Australian National University. My Honours research advisors are Professor Richard Hartley and Dr. Basura Fernando.
-* To learn more about me, you can checkout my list of publications on [Google Scholar](https://scholar.google.com.au/citations?user=t6B_Z7MAAAAJ&hl=en), or download my [CV](http://yugeten.github.io/files/CV_06March2019.pdf).
+* I am a Senior Research Scientist at Google DeepMind. Prior to this, I did my PhD in University of Oxford at [Torr Vision Group](http://www.robots.ox.ac.uk/~tvg/), supervised by Professor Philip Torr and Professor N. Siddharth. Prior to this, I acquired my Bachelor Degree in Engineering in Australian National University. My Honours research advisors are Professor Richard Hartley and Dr. Basura Fernando.
+* These days I work on video generative models and world models.
+* You can checkout my list of publications on [Google Scholar](https://scholar.google.com.au/citations?user=t6B_Z7MAAAAJ&hl=en).
